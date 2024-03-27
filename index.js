@@ -16,6 +16,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app = express();
 const PORT = process.env.PORT || 8080;
+// take note on this
 const corsOptions = { credentials: true, origin: process.env.URL || '*' };
 
 app.use(bodyparser.json());
